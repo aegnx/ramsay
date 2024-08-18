@@ -12,7 +12,8 @@ xlist = [
     "there’s enough garlic in here to kill every vampire in rurope.", \
     "hey, panini head, are you even listening to me?", \
     "i grew up in a funny way.", \
-    "this crab is so undercooked i can still hear it singing ‘under the sea!’"
+    "this crab is so undercooked i can still hear it singing ‘under the sea!’", \
+    "i dress for women and i undress for men."
 ]
 x = random.choice(xlist)
 dashdash = "-" * len(x)
