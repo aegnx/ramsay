@@ -1,8 +1,21 @@
 # ramsay.py
 
-welcome to ram**say**.py, a cool python project about making ascii gordon ramsay repeating his insults to you.
+welcome to ram**say**.py, a cool python project about making ascii gordon ramsay repeating his insults to you, or even saying what you want him to say.
 
-you can find binaries on the "releases" tab, and for linux binaries, just copy it into ``/bin`` or ``/usr/bin`` like so
+you can find binaries on the "releases" tab, or build it with pyinstaller
+
+you can build with pyinstaller like so
+```
+pip install pyinstaller
+pyinstaller --onefile ramsay.py
+```
+then head into ``dist`` (``cd dist`` after you are done) and grab the binary
+
+on linux, just chmod it like so to make it executable
+```
+chmod +x ramsay
+```
+and for linux binaries, just copy it into ``/bin`` or ``/usr/bin`` like so
 ```
 sudo cp [download location]/ramsay /bin/ramsay
 ```
@@ -18,7 +31,7 @@ or (for ``/usr/bin``)
 ```
 sudo cp /home/aegnx/Downloads/ramsay /usr/bin/ramsay
 ```
-and also for exe files (soon) you just have to run it using cmd or powershell or even git bash
+and also for exe files (soon, or just compile it yourself) you just have to run it using cmd or powershell or even git bash
 
 for the best experience use konsole (kde's terminal emulator on linux or freebsd) and disable the "Use unicode Braille characters contained in font" in:
 
