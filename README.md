@@ -20,6 +20,10 @@ and to add you quote just
 # in path
 ramsay [quote here]
 ```
+
+## running on windows
+need to compile yourself, not developed yet
+
 ## building it yourself
 
 you can build with pyinstaller like so
