@@ -4,6 +4,24 @@ welcome to ram**say**.py, a cool python project about making ascii gordon ramsay
 
 you can find binaries on the "releases" tab, or build it with pyinstaller
 
+to run it on linux, just do the command below
+```
+# not in path
+/path/to/binary/ramsay
+
+# in path
+ramsay
+```
+and to add you quote just
+```
+# not in path
+/path/to/binary/ramsay [quote here]
+
+# in path
+ramsay [quote here]
+```
+## building it yourself
+
 you can build with pyinstaller like so
 ```
 pip install pyinstaller
@@ -30,22 +48,6 @@ sudo cp /home/aegnx/Downloads/ramsay /bin/ramsay
 or (for ``/usr/bin``)
 ```
 sudo cp /home/aegnx/Downloads/ramsay /usr/bin/ramsay
-```
-to run it on linux, just do the command below
-```
-# not in path
-/path/to/binary/ramsay
-
-# in path
-ramsay
-```
-and to add you quote just
-```
-# not in path
-/path/to/binary/ramsay [quote here]
-
-# in path
-ramsay [quote here]
 ```
 and also for exe files (soon, or just compile it yourself) you just have to run it using cmd or powershell or even git bash
 
