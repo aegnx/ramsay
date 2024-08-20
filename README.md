@@ -6,11 +6,7 @@ welcome to ram**say**, a cool python project about making ascii gordon ramsay re
 
 you can find binaries on the "releases" tab, or build it with pyinstaller
 
-to run it on linux, install it first by curling a bash script and feeding it to sh **AS ROOT**
-```
-su # or sudo su if root doesnt have a password like in fedora
-```
-then just curl the script and pipe it to sh
+to run it on linux, install it first by curling a bash script and feeding it to sh
 ```
 curl https://raw.githubusercontent.com/aegnx/ramsay/main/install.sh | sh
 ```
