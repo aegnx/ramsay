@@ -8,7 +8,7 @@ you can find binaries on the "releases" tab, or build it with pyinstaller
 
 to run it on linux, install it first by curling a bash script and feeding it to sh AS ADMIN
 ```
-sudo curl https://raw.githubusercontent.com/aegnx/ramsay/main/install.sh | sh
+su && curl https://raw.githubusercontent.com/aegnx/ramsay/main/install.sh | sh
 ```
 then just run it
 ```
