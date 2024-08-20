@@ -68,7 +68,7 @@ or (for ``/usr/bin``)
 ```
 sudo cp /home/aegnx/Downloads/ramsay /usr/bin/ramsay
 ```
-and also for exe files (soon, or just compile it yourself) you just have to run it using cmd or powershell or even git bash
+and also for exe files you just have to run it using cmd or powershell, windows terminal is optional but a font is necessary
 
 for the best experience use konsole (kde's terminal emulator on linux or freebsd) and disable the "Use unicode Braille characters contained in font" in:
 
