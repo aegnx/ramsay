@@ -37,52 +37,11 @@ you can use flags too, just add them after it like so
 ```
 ## building it yourself
 
-you can build with pyinstaller like so
-```
-pip install pyinstaller
-pyinstaller --onefile ramsay.py
-```
-you may have to manage venvs on linux before doing so (pipx does all the work i think)
+its a fucking python script. you dont have to fucking build jack shit
 
-then head into ``dist`` (``cd dist`` after you are done) and grab the binary
-
-on linux, just chmod it like so to make it executable
-```
-chmod +x ramsay
-```
-and for linux binaries, just copy it into ``/bin`` or ``/usr/bin`` like so
-```
-sudo cp [download location]/ramsay /bin/ramsay
-```
-or (for ``/usr/bin``)
-```
-sudo cp [download location]/ramsay /usr/bin/ramsay
-```
-example:
-```
-sudo cp /home/aegnx/Downloads/ramsay /bin/ramsay
-```
-or (for ``/usr/bin``)
-```
-sudo cp /home/aegnx/Downloads/ramsay /usr/bin/ramsay
-```
-and also for exe files you just have to run it using cmd or powershell, windows terminal is optional but a font is necessary
-
-for the best experience use konsole (kde's terminal emulator on linux or freebsd) and disable the "Use unicode Braille characters contained in font" in:
-
-menu>settings>configure konsole>profile>[profile name]>edit>appearance>color scheme & font
+the author really is a fan of destroying your package manager, im not.
+instead of putting it in fucking `/usr/bin` (bad idea), put it in `~/.local/bin` (good idea)
 
 ## building and using it with the dockerfile
 
-clone the repo
-```
-git clone https://github.com/aegnx/ramsay.py
-```
-then build the image like so
-```
-docker build -t ramsay
-```
-and then execute it
-```
-docker run ramsay:latest
-```
+WHY THE FUCK DO YOU NEED A DOCKERFILE FOR A FUCKING PYTHON SCRIPT????? MY MAGIC 8BALL HAS BETTERS IDEAS THAN YOU
