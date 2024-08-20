@@ -15,10 +15,10 @@ ramsay
 and to add you quote just
 ```
 # not in path
-/path/to/binary/ramsay [quote here]
+/path/to/binary/ramsay -c "[quote here]"
 
 # in path
-ramsay [quote here]
+ramsay -c "[quote here]"
 ```
 
 ## running on windows
