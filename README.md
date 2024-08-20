@@ -1,6 +1,8 @@
-# ramsay.py
+# ramsay
 
-welcome to ram**say**.py, a cool python project about making ascii gordon ramsay repeating his insults to you, or even saying what you want him to say.
+![image](https://github.com/user-attachments/assets/c7c6e9aa-a7eb-4305-8455-a133b4426fbe)
+
+welcome to ram**say**, a cool python project about making ascii gordon ramsay repeating his insults to you, or even saying what you want him to say.
 
 you can find binaries on the "releases" tab, or build it with pyinstaller
 
