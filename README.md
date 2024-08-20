@@ -23,8 +23,20 @@ just do this command below
 ramsay -h
 ```
 ## running on windows
-need to build yourself using pip and pyinstaller like down below, not developed yet
+use powershell and a font that supports braille, head on to your download folder like so:
+```
+cd [Downloads folder]
+```
+and then run it like linux
+```
+.\ramsay.exe
+```
+apparently bash on windows spits out an error so just use powershell with a proper font
 
+you can use flags too, just add them after it like so
+```
+.\ramsay.exe -h
+```
 ## building it yourself
 
 you can build with pyinstaller like so
