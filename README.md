@@ -22,7 +22,7 @@ ramsay [quote here]
 ```
 
 ## running on windows
-need to compile yourself, not developed yet
+need to build yourself using pip and pyinstaller like down below, not developed yet
 
 ## building it yourself
 
@@ -31,6 +31,8 @@ you can build with pyinstaller like so
 pip install pyinstaller
 pyinstaller --onefile ramsay.py
 ```
+you may have to manage venvs on linux before doing so (pipx does all the work i think)
+
 then head into ``dist`` (``cd dist`` after you are done) and grab the binary
 
 on linux, just chmod it like so to make it executable
