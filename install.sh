@@ -1,12 +1,24 @@
-et -e
-echo "running sudo su for admin (this program copies the binary into your /usr/bin folder)"
-sudo su
-echo "downloading binary."
+set -e
+echo "Welcome To The Ramsay Installer!"
+sleep 1
+echo "Downloading binary..."
+sleep 1
 curl -LO https://github.com/aegnx/ramsay/releases/download/release020/ramsay
-echo "copying binary to /bin, hope the binary is in the same folder you're in"
-cp ramsay /usr/bin/ramsay
-echo "succesfully copied"
-echo "giving it execution perms"
-chmod +x /usr/bin/ramsay
-echo "done! enjoy."
+sleep 1
+echo "copying binary to /bin"
+sleep 1
+echo "Please Input your Password if not in su!"
+sleep 0.1
+sudo cp ramsay /usr/bin/ramsay
+sleep 1
+rm ramsay
+sleep 1
+echo "Succesfully copied!"
+sleep 1
+echo "Giving it Execution Perms"
+sleep 1
+sudo chmod +x /usr/bin/ramsay
+sleep 1
+echo "Done! enjoy."
+sleep 1
 exit
