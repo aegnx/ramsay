@@ -60,21 +60,13 @@ on linux, just chmod it like so to make it executable
 ```
 chmod +x ramsay
 ```
-and for linux binaries, just copy it into ``/bin`` or ``/usr/bin`` like so
+and for linux binaries, just copy it into ``~/.local/bin/`` like so
 ```
-sudo cp [download location]/ramsay /bin/ramsay
-```
-or (for ``/usr/bin``)
-```
-sudo cp [download location]/ramsay /usr/bin/ramsay
+sudo cp [download location]/ramsay ~/.local/bin/
 ```
 example:
 ```
-sudo cp /home/aegnx/Downloads/ramsay /bin/ramsay
-```
-or (for ``/usr/bin``)
-```
-sudo cp /home/aegnx/Downloads/ramsay /usr/bin/ramsay
+sudo cp ~/Downloads/ramsay ~/.local/bin/
 ```
 and also for exe files you just have to run it using cmd or powershell, windows terminal is optional but a font is necessary
 
