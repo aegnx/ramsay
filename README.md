@@ -6,24 +6,20 @@ welcome to ram**say**, a cool python project about making ascii gordon ramsay re
 
 you can find binaries on the "releases" tab, or build it with pyinstaller
 
-to run it on linux, just do the command below
+to run it on linux, install it first by curling a bash script and feeding it to sh AS ADMIN
 ```
-# not in path
-/path/to/binary/ramsay
-
-# in path
+sudo curl https://raw.githubusercontent.com/aegnx/ramsay/main/install.sh | sh
+```
+then just run it
+```
 ramsay
 ```
-and also there is no ``--help`` flag so you have to use the -h option
-
-just do this command below
+for help just put the ``-h`` option after the command 
 ```
-# not in path
-/path/to/binary/ramsay -h
-
-# in path
 ramsay -h
 ```
+this will NOT ensure any help other then the usage of ramsay (the program)
+
 ## running on windows
 use powershell and a font that supports braille, head on to your download folder like so:
 ```
