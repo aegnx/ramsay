@@ -15,7 +15,7 @@ rm ramsay
 sleep 1
 echo "Succesfully copied!"
 sleep 1
-echo "Giving it Execution Perms"
+echo "Giving it Execution Perms, again, enter your password if you arent in su"
 sleep 1
 sudo chmod +x /usr/bin/ramsay
 sleep 1
