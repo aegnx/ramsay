@@ -58,3 +58,18 @@ and also for exe files (soon, or just compile it yourself) you just have to run 
 for the best experience use konsole (kde's terminal emulator on linux or freebsd) and disable the "Use unicode Braille characters contained in font" in:
 
 menu>settings>configure konsole>profile>[profile name]>edit>appearance>color scheme & font
+
+## building and using it with the dockerfile
+
+clone the repo
+```
+git clone https://github.com/aegnx/ramsay.py
+```
+then build the image like so
+```
+docker build -t ramsay
+```
+and then execute it
+```
+docker run ramsay:latest
+```
