@@ -12,15 +12,16 @@ to run it on linux, just do the command below
 # in path
 ramsay
 ```
-and to add you quote just
+and also there is no ``--help`` flag so you have to use the -h option
+
+just do this command below
 ```
 # not in path
-/path/to/binary/ramsay -c "[quote here]"
+/path/to/binary/ramsay -h
 
 # in path
-ramsay -c "[quote here]"
+ramsay -h
 ```
-
 ## running on windows
 need to build yourself using pip and pyinstaller like down below, not developed yet
 
