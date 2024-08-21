@@ -45,6 +45,9 @@ you can use flags too, just add them after it like so
 ```
 .\ramsay.exe -h
 ```
+windows terminal is **optional** but a font is **necessary**
+
+you can add it to path if you want to, not necessary though
 ## building it yourself
 
 you can build with pyinstaller like so
@@ -60,7 +63,7 @@ on linux, just chmod it like so to make it executable
 ```
 chmod +x ramsay
 ```
-and for linux binaries, just copy it into ``~/.local/bin/`` like so
+and then, just copy it into ``~/.local/bin/`` like so
 ```
 sudo cp [download location]/ramsay ~/.local/bin/
 ```
@@ -68,7 +71,7 @@ example:
 ```
 sudo cp ~/Downloads/ramsay ~/.local/bin/
 ```
-and also for exe files you just have to run it using cmd or powershell, windows terminal is optional but a font is necessary
+and also for exe files you just have to run it using cmd or powershell, add it to the windows PATH if you know how to (optional).
 
 ## building and using it with the dockerfile
 
