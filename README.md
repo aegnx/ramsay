@@ -45,7 +45,7 @@ you can use flags too, just add them after it like so
 ```
 .\ramsay.exe -h
 ```
-windows terminal is **optional** but a font is **necessary**
+a third party terminal is necessary since the default powershell and cmd programs dont have braille support (L microsoft)
 
 you can add it to path if you want to, not necessary though
 ## building it yourself
