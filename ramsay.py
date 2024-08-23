@@ -24,9 +24,11 @@ x = random.choice(xlist)
 
 ralsaymode = False
 helpmode = False
+genuinemode = False
+
 argv = sys.argv[1:]
 try:
-    opts, args = getopt.getopt(argv, "hc:l:")
+    opts, args = getopt.getopt(argv, "hc:l:g:")
 except: 
     print("unexpected error occured, exiting")
 for opt, arg in opts:
@@ -37,6 +39,9 @@ for opt, arg in opts:
         ralsaymode = True
     elif opt in ['-h']: 
         helpmode = True
+    elif opt in ['-g']:
+        x = arg
+        genuinemode = True  
     else:
         print("unexpected flag... exiting")
 
@@ -55,9 +60,38 @@ if helpmode == True:
     print("      ralsay mode (works exactly like custom mode)")
     print("      example:")
     print("              ramsay -l uhm")
+    print("genuine mode (-g)")
+    print("      genuine mode (prints a literal ram)")
+    print("      works exactly like custom mode")
+    print("      example:")
+    print('              ramsay -g "YEAHHH IM A RAM!"')
     print("")
     print("try the commands, adapt to the syntax, its pretty easy tbh")
-
+elif genuinemode == True:
+    dashdash = "-" * len(x)
+    print("                                              ")
+    print("        ⣀⣀⣀⣀⡀⣠⣴⣶⣶⣶⣦⣄⡀                         ")
+    print(f"    ⢀⣔⢮⡫⣞⣮⣺⣺⣾⣿⣿⣿⣿⣿⣿⣿⣷⣤⣤⣠⣀⣠⡠⣄⢄⡀                {dashdash}")
+    print(f"   ⣜⢵⡳⣝⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡫⣞⢼⡺⣪⢯⣺⢳⣢             ({x})w")
+    print(f"  ⡼⣕⢯⡺⠵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢧⢯⡺⣕⢯⡺⣕⣗⢽⡪⡯⣂          / {dashdash}")
+    print(" ⢸⡪⣗⢽⠘⢌⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣕⣗⢽⡪⣗⠽⡺⣜⢗⡽⣝⢞⣤⣠⡀      /  ")
+    print(" ⢪⡫⠢⡳⣕⢿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣪⢮⡳⢍⠢⡑⠔⢌⢳⣝⢮⡳⡽⣿⣿⣷⣄   /   ")
+    print(" ⢸⢝⣵⡪⡸⣝⣿⣟⠋⠙⢮⣫⣟⢿⡻⠝⠝⣟⣿⣿⣿⣮⠳⡭⣢⢧⣪⢘⠄⢕⢵⡫⣞⢽⣿⣿⣿⣿⡂ /    ")
+    print("  ⢫⢞⣞⣾⣿⣿⣞⡤⡤⣻⣪⢾⢵⣫⠀⢀⢗⣗⡽⡽⡱⣝⣝⢮⡳⠡⡡⡑⡱⣝⢮⣳⣫⣿⣿⣿⣿⣗⢤     ")
+    print("   ⠓⣽⣿⣿⣿⣺⣪⢯⣳⡳⡽⡵⣳⢯⣫⢗⣗⣿⡑⣝⢮⢮⡳⣣⣣⡢⡮⣺⢵⡫⣞⣾⣿⣿⣿⣿⣿⣽⣕⢦⣀  ")
+    print("    ⣿⣿⣿⣗⣗⡕⠫⡞⠞⢽⢝⡮⣗⣗⢯⣾⣿⡎⢮⢯⡺⣝⢞⡼⣪⢯⡺⣕⢯⣾⣿⣿⣿⣿⣿⣿⣿⣯⢳⠳⠁ ")
+    print("    ⢻⣿⣿⣞⢞⣞⠆⠀⡶⣝⣗⡽⣺⣪⢿⣿⣿⣿⡌⢗⢽⡪⣗⡽⣕⢯⣺⣵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿    ")
+    print("    ⠈⣻⣿⣷⣫⢌⣄⣆⣉⣈⣞⣞⡵⣳⣿⣿⣿⣿⣿⣷⣵⣝⣮⣾⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗    ")
+    print("    ⢰⣿⣿⣿⣿⣷⣷⣵⣳⣵⣳⣵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄   ")
+    print("    ⠐⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟    ")
+    print("     ⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠏     ")
+    print("      ⠘⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣝⠂      ")
+    print("         ⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣟⢮⢯       ")
+    print("          ⢸⡻⡿⣿⡿⡿⠿⢿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⡿⠿⡹⠫⠙⠉⠹⡝⣞⠽⡕       ")
+    print("           ⢯⡻⣺⡺⡅  ⢹⣻⡻⣻⢽⠅ ⠁⠁⠐⠈⠪⠘⠈  ⠈⢎⠢⡱⠈       ")
+    print("           ⠑⠜⠔⠌⠂  ⢐⠱⡙⢕⢍⠅                      ")
+    print("                   ⠁⠊⠂⠁                       ")
+    print("                                              ")
 elif ralsaymode == True:
     dashdash = "-" * len(x)
     print("           -^-         ")
@@ -76,20 +110,20 @@ elif ralsaymode == True:
     print("       (___- -___)     ")
 else:
     dashdash = "-" * len(x)
-    print("                               ")
-    print("⠁⡼⠋⠀⣆⠀⠀⣰⣿⣫⣾⢿⣿⣿⠍⢠⠠⠀⠀⢀⠰⢾⣺⣻⣿⣿⣿⣷⡀⠀ ")
-    print("⣥⠀⠀⠀⠁⠀⠠⢻⢬⠁⣠⣾⠛⠁⠀⠀⠀⠀⠀⠀⠀⠐⠱⠏⡉⠙⣿⣿⡇⠀ ")
-    print(f"⢳⠀⢰⡖⠀⠀⠈⠀⣺⢰⣿⢻⣾⣶⣿⣿⣶⣶⣤⣤⣴⣾⣿⣷⣼⡆⢸⣿⣧⠀  {dashdash}")
-    print(f"⠈⠀⠜⠈⣀⣔⣦⢨⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣅⣼⠛⢹⠀ ({x})")
-    print(f"⠀⠀⠀⠀⢋⡿⡿⣯⣭⡟⣟⣿⣿⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⡘⠀/ {dashdash}")
-    print("⡀⠐⠀⠀⠀⣿⣯⡿⣿⣿⣿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⣉⢽⣿⡆  /")
-    print("⢳⠀⠄⠀⢀⣿⣿⣿⣿⣿⣿⣿⠙⠉⠉⠉⠛⣻⢛⣿⠛⠃⠀⠐⠛⠻⣿⡇ /")
-    print("⣾⠄⠀⠀⢸⣿⣿⡿⠟⠛⠁⢀⠀⢀⡄⣀⣠⣾⣿⣿⡠⣴⣎⣀⣠⣠⣿⡇/")
-    print("⣧⠀⣴⣄⣽⣿⣿⣿⣶⣶⣖⣶⣬⣾⣿⣾⣿⣿⣿⣿⣽⣿⣿⣿⣿⣿⣿⡇⠀⠀ ")
-    print("⣿⣶⣈⡯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⣹⢧⣿⣿⣿⣄⠙⢿⣿⣿⣿⠇⠀⠀ ")
-    print("⠹⣿⣿⣧⢌⢽⣻⢿⣯⣿⣿⣿⣿⠟⣠⡘⠿⠟⠛⠛⠟⠛⣧⡈⠻⣾⣿⠀⠀⠀ ")
-    print("⠀⠈⠉⣷⡿⣽⠶⡾⢿⣿⣿⣿⢃⣤⣿⣷⣤⣤⣄⣄⣠⣼⡿⢷⢀⣿⡏⠀⠀⠀ ")
-    print("⠀⠀⢀⣿⣷⠌⣈⣏⣝⠽⡿⣷⣾⣏⣀⣉⣉⣀⣀⣀⣠⣠⣄⡸⣾⣿⠃⠀⠀⠀ ")
-    print("⠀⣰⡿⣿⣧⡐⠄⠱⣿⣺⣽⢟⣿⣿⢿⣿⣍⠉⢀⣀⣐⣼⣯⡗⠟⡏⠀⠀⠀⠀ ")
-    print("⣰⣿⠀⣿⣿⣴⡀⠂⠘⢹⣭⡂⡚⠿⢿⣿⣿⣿⡿⢿⢿⡿⠿⢁⣴⣿⣷⣶⣦⣤ ")
+    print("                                ")
+    print(" ⠁⡼⠋⠀⣆⠀⠀⣰⣿⣫⣾⢿⣿⣿⠍⢠⠠⠀⠀⢀⠰⢾⣺⣻⣿⣿⣿⣷⡀⠀ ")
+    print(" ⣥⠀⠀⠀⠁⠀⠠⢻⢬⠁⣠⣾⠛⠁⠀⠀⠀⠀⠀⠀⠀⠐⠱⠏⡉⠙⣿⣿⡇⠀ ")
+    print(f" ⢳⠀⢰⡖⠀⠀⠈⠀⣺⢰⣿⢻⣾⣶⣿⣿⣶⣶⣤⣤⣴⣾⣿⣷⣼⡆⢸⣿⣧⠀  {dashdash}")
+    print(f" ⠈⠀⠜⠈⣀⣔⣦⢨⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣅⣼⠛⢹⠀ ({x})")
+    print(f" ⠀⠀⠀⠀⢋⡿⡿⣯⣭⡟⣟⣿⣿⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⡘⠀ /{dashdash}")
+    print(" ⡀⠐⠀⠀⠀⣿⣯⡿⣿⣿⣿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⣉⢽⣿⡆  /")
+    print(" ⢳⠀⠄⠀⢀⣿⣿⣿⣿⣿⣿⣿⠙⠉⠉⠉⠛⣻⢛⣿⠛⠃⠀⠐⠛⠻⣿⡇ /")
+    print(" ⣾⠄⠀⠀⢸⣿⣿⡿⠟⠛⠁⢀⠀⢀⡄⣀⣠⣾⣿⣿⡠⣴⣎⣀⣠⣠⣿⡇/")
+    print(" ⣧⠀⣴⣄⣽⣿⣿⣿⣶⣶⣖⣶⣬⣾⣿⣾⣿⣿⣿⣿⣽⣿⣿⣿⣿⣿⣿⡇⠀⠀ ")
+    print(" ⣿⣶⣈⡯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⣹⢧⣿⣿⣿⣄⠙⢿⣿⣿⣿⠇⠀⠀ ")
+    print(" ⠹⣿⣿⣧⢌⢽⣻⢿⣯⣿⣿⣿⣿⠟⣠⡘⠿⠟⠛⠛⠟⠛⣧⡈⠻⣾⣿⠀⠀⠀ ")
+    print(" ⠀⠈⠉⣷⡿⣽⠶⡾⢿⣿⣿⣿⢃⣤⣿⣷⣤⣤⣄⣄⣠⣼⡿⢷⢀⣿⡏⠀⠀⠀ ")
+    print(" ⠀⠀⢀⣿⣷⠌⣈⣏⣝⠽⡿⣷⣾⣏⣀⣉⣉⣀⣀⣀⣠⣠⣄⡸⣾⣿⠃⠀⠀⠀ ")
+    print(" ⠀⣰⡿⣿⣧⡐⠄⠱⣿⣺⣽⢟⣿⣿⢿⣿⣍⠉⢀⣀⣐⣼⣯⡗⠟⡏⠀⠀⠀⠀ ")
+    print(" ⣰⣿⠀⣿⣿⣴⡀⠂⠘⢹⣭⡂⡚⠿⢿⣿⣿⣿⡿⢿⢿⡿⠿⢁⣴⣿⣷⣶⣦⣤ ")
     print("                               ")
