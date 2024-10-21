@@ -1,6 +1,6 @@
 # ramsay
 
-development has stopped till i am done learning enough rust to turn this project into a rust project, just give me a while.
+development has completely stopped, I don't know when I will come back to it but I will rewrite it in rust/C if I come back
 
 **PLEASE READ THE PARTS NECESSARY TO RUN THE PROGRAM, DO NOT SKIP**
 
