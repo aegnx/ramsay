@@ -79,7 +79,7 @@ and also for exe files you just have to run it using cmd or powershell, add it t
 
 clone the repo
 ```
-git clone https://github.com/aegnx/ramsay.py
+git clone https://github.com/aegnx/ramsay
 ```
 then build the image like so
 ```
